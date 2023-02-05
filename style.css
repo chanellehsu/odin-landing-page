@@ -1,63 +1,87 @@
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 .header,
-.footer {
+.top-section {
   background-color: #1f2937;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 60px;
+}
+
+.header > .logo {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
 }
 
 ul {
-  margin: 0;
   list-style-type: none;
-  gap: 8px;
+  display: flex;
+  gap: 16px;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: #f9faf8;
-}
-
-.header .logo {
-  font-size: 24px;
-  color: #f9faf8;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 .top-section {
   display: flex;
-  padding: 32px;
+  padding: 32px 60px;
+  padding-bottom: 90px;
+  justify-content: space-between;
 }
 
-.top-section-left {
+.hero-section {
   display: flex;
   flex-direction: column;
+  min-width: 300px;
+  justify-content: flex-start;
+  gap: 12px;
 }
 
-.top-section-title {
+.hero-main-text {
   font-size: 48px;
   font-weight: 800;
   color: #f9faf8;
 }
 
-.text,
-.top-section-text {
+.hero-sub-text {
   font-size: 18px;
   color: #e5e7eb;
 }
 
 .button {
   background-color: #3882f6;
+  color: #e5e7eb;
+  border-radius: 8px;
+  padding: 5px 15px;
+  min-height: 30px;
+  min-width: 120px;
+  margin-right: auto;
+}
+
+.image-placeholder {
+  display: flex;
+  background-color: grey;
   color: #f9faf8;
+  align-items: center;
+  height: 240px;
+  width: 300px;
+  justify-content: center;
+  padding: 5px;
 }
 
 .random-section {
   display: flex;
+  padding: 50px 60px;
+  text-align: center;
   flex-direction: column;
+  gap: 16px;
 }
 
 .random-section-title {
@@ -66,19 +90,65 @@ a {
   color: #1f2937;
 }
 
-.container {
+.random-section-cards {
   display: flex;
+  gap: 16px;
+  padding: 15px 30px;
+  justify-content: center;
 }
 
-.info {
+.card {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+
+.card-placeholder {
+  background-color: #f9faf8;
+  border-style: solid;
+  border-color: #3882f6;
+  height: 200px;
 }
 
 .quote-section {
   background-color: #e5e7eb;
-  color: #1f2937;
-  font-weight: light;
+  padding: 80px 140px;
+  font-size: 36px;
   font-style: italic;
-  padding: 32px;
+}
+
+.quote-section > p {
+  font-weight: 300;
+}
+
+.quote-section > p1 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px 50px;
+}
+
+.cta-banner {
+  background-color: #3882f6;
+  display: flex;
+  color: #e5e7eb;
+  padding: 40px 80px;
+  gap: 24px;
+}
+
+.cta-banner-title {
+  font-weight: 700;
+}
+
+.cta-banner > .button {
+  border-style: solid;
+  border-color: white;
 }
